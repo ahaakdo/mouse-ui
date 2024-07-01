@@ -1,4 +1,4 @@
-import MButton from './components/button.vue'
+import MButton from './components/MButton/button.vue'
 import type { App } from 'vue'
 
 const components = [

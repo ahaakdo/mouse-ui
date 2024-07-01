@@ -1,0 +1,28 @@
+.m-button-default {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 32px;
+    color: black;
+    background-color: #fff;
+    border: 1px solid rgb(154, 154, 154);
+    border-radius: 4px;
+    outline: 0;
+    cursor: pointer;
+}
+
+.m-button-default.is-normal {
+    padding: 16px 22px;
+    font-size: 14px;
+}
+
+.m-button-default.is-small {
+    padding: 10px 12px;
+    font-size: 12px;
+}
+
+.m-button-default.is-large {
+    padding: 22px 28px;
+    font-size: 16px;
+}
