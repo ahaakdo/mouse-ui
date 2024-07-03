@@ -4,7 +4,7 @@ import './style/index.scss'
 </script>
 
 <template>
-  <MButton>
+  <MButton size="large">
     按钮
   </MButton>
 </template>
