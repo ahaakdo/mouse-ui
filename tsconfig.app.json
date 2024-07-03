@@ -1,6 +1,7 @@
 {
   "compilerOptions": {
     "composite": true,
+    "noImplicitAny": false, // 是否在表达式和声明上有隐含的any类型时报错
     "tsBuildInfoFile": "./node_modules/.tmp/tsconfig.app.tsbuildinfo",
     "target": "ES2020",
     "useDefineForClassFields": true,

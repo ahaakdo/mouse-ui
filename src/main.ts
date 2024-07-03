@@ -1,6 +1,6 @@
 import { createApp } from 'vue'
 import App from './App.vue'
-import MouseUI from './index'
 import './index.scss'
+import Button from './components/button'
 
-createApp(App).use(MouseUI).mount('#app')
+createApp(App).use(Button).mount('#app')
