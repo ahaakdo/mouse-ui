@@ -1,6 +1,6 @@
 <script setup lang="ts">
 // import MButton from './components/button.vue'
-import './style/index.scss'
+// import './style/index.scss'
 </script>
 
 <template>
