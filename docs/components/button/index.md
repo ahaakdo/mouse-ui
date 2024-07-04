@@ -26,6 +26,11 @@
     <m-button type="info">not round</m-button>
     <m-button type="primary" round>round</m-button>
 </div>
+字体加粗
+<div class="button-container">
+    <m-button type="info">not strong</m-button>
+    <m-button type="primary" strong>strong</m-button>
+</div>
 :::
 
 代码示例
@@ -51,6 +56,10 @@
 <div class="button-container">
     <m-button type="info">not round</m-button>
     <m-button type="primary" round>round</m-button>
+</div>
+<div class="button-container">
+    <m-button type="info">not strong</m-button>
+    <m-button type="primary" strong>strong</m-button>
 </div>
 ```
 

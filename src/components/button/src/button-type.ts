@@ -22,6 +22,10 @@ export const buttonProps = {
     round: {
         type: Boolean,
         default: false
+    },
+    strong: {
+        type: Boolean,
+        default: false
     }
 } as const
 
