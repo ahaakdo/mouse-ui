@@ -21,6 +21,11 @@
     <m-button type="info">abled</m-button>
     <m-button type="primary" disabled>disabled</m-button>
 </div>
+按钮圆角
+<div class="button-container">
+    <m-button type="info">not round</m-button>
+    <m-button type="primary" round>round</m-button>
+</div>
 :::
 
 代码示例
@@ -42,6 +47,10 @@
 <div class="button-container">
     <m-button type="info">abled</m-button>
     <m-button type="primary" disabled>disabled</m-button>
+</div>
+<div class="button-container">
+    <m-button type="info">not round</m-button>
+    <m-button type="primary" round>round</m-button>
 </div>
 ```
 

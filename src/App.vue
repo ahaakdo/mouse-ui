@@ -4,7 +4,7 @@
 </script>
 
 <template>
-  <MButton size="normal" type="success" disabled>
+  <MButton size="normal " type="success">
     按钮
   </MButton>
 </template>
