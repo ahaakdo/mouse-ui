@@ -16,6 +16,11 @@
     <m-button type="warning">warning</m-button>
     <m-button type="error">error</m-button>
 </div>
+是否禁用
+<div class="button-container">
+    <m-button type="info">abled</m-button>
+    <m-button type="primary" disabled>disabled</m-button>
+</div>
 :::
 
 代码示例
@@ -33,6 +38,10 @@
     <m-button type="info">info</m-button>
     <m-button type="warning">warning</m-button>
     <m-button type="error">error</m-button>
+</div>
+<div class="button-container">
+    <m-button type="info">abled</m-button>
+    <m-button type="primary" disabled>disabled</m-button>
 </div>
 ```
 

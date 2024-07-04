@@ -14,6 +14,10 @@ export const buttonProps = {
     type: {
         type: String as PropType<MButtonType>,
         default: 'default'
+    },
+    disabled: {
+        type: Boolean,
+        default: false
     }
 } as const
 
