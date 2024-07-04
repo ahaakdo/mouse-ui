@@ -26,3 +26,85 @@
     padding: 22px 28px;
     font-size: 16px;
 }
+
+.m-button-default.is-default {
+    background-color: #ffffff;
+    color: black;
+}
+
+.m-button-default.is-tertiary {
+    background-color: #ffffff;
+    color: rgb(124, 124, 124);
+}
+
+.m-button-default.is-primary {
+    background-color: #2c950c;
+    color: white;
+    border: none;
+}
+
+.m-button-default.is-success {
+    background-color: #2c950c;
+    color: white;
+    border: none;
+}
+
+.m-button-default.is-error {
+    background-color: #d82727;
+    color: white;
+    border: none;
+}
+
+.m-button-default.is-warning {
+    background-color: #e6880e;
+    color: white;
+    border: none;
+}
+
+.m-button-default.is-info {
+    background-color: #12ade6;
+    color: white;
+    border: none;
+}
+
+.m-button-default.is-default:hover {
+    color: #42a325;
+    border-color: #42a325;
+    transition: color 0.1s linear;
+}
+
+.m-button-default.is-tertiary:hover {
+    color: #42a325;
+    border-color: #42a325;
+    transition: color 0.1s linear;
+}
+
+.m-button-default.is-primary:hover {
+    background-color: #42a325;
+    color: white;
+    transition: background-color 0.1s linear;
+}
+
+.m-button-default.is-success:hover {
+    background-color: #42a325;
+    color: white;
+    transition: background-color 0.1s linear;
+}
+
+.m-button-default.is-error:hover {
+    background-color: rgb(235, 58, 58);
+    color: white;
+    transition: background-color 0.1s linear;
+}
+
+.m-button-default.is-warning:hover {
+    background-color: #ee992a;
+    color: white;
+    transition: background-color 0.1s linear;
+}
+
+.m-button-default.is-info:hover {
+    background-color: #32c1f5;
+    color: white;
+    transition: background-color 0.1s linear;
+}

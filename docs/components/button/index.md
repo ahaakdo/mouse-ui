@@ -6,6 +6,16 @@
     <m-button size="small">small</m-button>
     <m-button size="large">large</m-button>
 </div>
+按钮类型
+<div class="button-container">
+    <m-button type="default">default</m-button>
+    <m-button type="tertiary">tertiary</m-button>
+    <m-button type="success">success</m-button>
+    <m-button type="primary">primary</m-button>
+    <m-button type="info">info</m-button>
+    <m-button type="warning">warning</m-button>
+    <m-button type="error">error</m-button>
+</div>
 :::
 
 代码示例
@@ -15,13 +25,20 @@
     <m-button size="small">small</m-button>
     <m-button size="large">large</m-button>
 </div>
+<div class="button-container">
+    <m-button type="default">default</m-button>
+    <m-button type="tertiary">tertiary</m-button>
+    <m-button type="success">success</m-button>
+    <m-button type="primary">primary</m-button>
+    <m-button type="info">info</m-button>
+    <m-button type="warning">warning</m-button>
+    <m-button type="error">error</m-button>
+</div>
 ```
 
 <style> 
     .button-container {
-        display: flex;
-    }
-    button {
-        margin-right: 20%;
+        display: grid;
+        grid-template-columns: repeat(3, 33.33%);
     }
 </style>

@@ -2,7 +2,7 @@ import { PropType, ExtractPropTypes } from 'vue'
 
 //定义按钮类型枚举
 export type MButtonSize = 'normal' | 'large' | 'small'
-export type MButtonType = 'primary' | 'error' | 'info' | 'warning'
+export type MButtonType = 'primary' | 'error' | 'info' | 'warning' | 'default' | 'tertiary' | 'success'
 
 //定义按钮组件的属性对象
 export const buttonProps = {
@@ -13,7 +13,7 @@ export const buttonProps = {
     },
     type: {
         type: String as PropType<MButtonType>,
-        default: 'primary'
+        default: 'default'
     }
 } as const
 
