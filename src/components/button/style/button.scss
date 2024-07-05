@@ -20,33 +20,33 @@
         font-weight: 600;
     }
 
-}
+    &.is-normal {
+        padding: 16px 22px;
+        font-size: 14px;
 
-.m-button-default.is-normal {
-    padding: 16px 22px;
-    font-size: 14px;
-
-    &[round=true] {
-        border-radius: 16px;
+        &[round=true] {
+            border-radius: 16px;
+        }
     }
-}
 
-.m-button-default.is-small {
-    padding: 8px 12px;
-    font-size: 12px;
+    &.is-small {
+        padding: 8px 12px;
+        font-size: 12px;
 
-    &[round=true] {
-        border-radius: 16px;
+        &[round=true] {
+            border-radius: 16px;
+        }
     }
-}
 
-.m-button-default.is-large {
-    padding: 22px 28px;
-    font-size: 16px;
+    &.is-large {
+        padding: 22px 28px;
+        font-size: 16px;
 
-    &[round=true] {
-        border-radius: 38px;
+        &[round=true] {
+            border-radius: 38px;
+        }
     }
+
 }
 
 .m-button-default.is-default {
