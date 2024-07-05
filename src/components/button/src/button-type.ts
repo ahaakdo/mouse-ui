@@ -26,6 +26,10 @@ export const buttonProps = {
     strong: {
         type: Boolean,
         default: false
+    },
+    dashed: {
+        type: Boolean,
+        default: false
     }
 } as const
 

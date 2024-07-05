@@ -19,6 +19,7 @@
     &[strong=true] {
         font-weight: 600;
     }
+
 }
 
 .m-button-default.is-normal {
@@ -49,83 +50,206 @@
 }
 
 .m-button-default.is-default {
-    background-color: #ffffff;
+    background-color: transparent;
     color: black;
+
+    &[dashed=true] {
+        border: 1px dashed #adaaaa;
+    }
+
+    &[dashed=true]:active {
+        color: #42a325;
+        border-color: #42a325;
+        box-shadow: 0px 0px 10px #42a325;
+        transition: box-shadow 0.1s linear, color 0.1s linear;
+    }
+
+    &[dashed=true]:hover {
+        color: #42a325;
+        border-color: #42a325;
+    }
+
+    &:not([dashed=true]):hover {
+        color: #42a325;
+        border-color: #42a325;
+        transition: color 0.1s linear;
+    }
 }
 
 .m-button-default.is-tertiary {
-    background-color: #ffffff;
+    background-color: transparent;
     color: rgb(124, 124, 124);
+
+    &[dashed=true] {
+        border: 1px dashed #adaaaa;
+    }
+
+    &[dashed=true]:active {
+        color: #42a325;
+        border-color: #42a325;
+        box-shadow: 0px 0px 10px #42a325;
+        transition: box-shadow 0.1s linear, color 0.1s linear;
+    }
+
+    &[dashed=true]:hover {
+        color: #42a325;
+        border-color: #42a325;
+    }
+
+    &:not([dashed=true]):hover {
+        color: #42a325;
+        border-color: #42a325;
+        transition: color 0.1s linear;
+    }
 }
 
 .m-button-default.is-primary {
     background-color: #2c950c;
     color: white;
     border: none;
+
+    &[dashed=true] {
+        border: 1px dashed #2c950c;
+        background-color: transparent;
+        color: #2c950c;
+    }
+
+    &:not([dashed=true]):hover {
+        background-color: #42a325;
+        color: white;
+        transition: background-color 0.1s linear;
+    }
+
+    &[dashed=true]:active {
+        color: #42a325;
+        border-color: #42a325;
+        box-shadow: 0px 0px 10px #42a325;
+        transition: box-shadow 0.1s linear, color 0.1s linear;
+    }
+
+    &[dashed=true]:hover {
+        color: #42a325;
+        border-color: #42a325;
+    }
 }
 
 .m-button-default.is-success {
     background-color: #2c950c;
     color: white;
     border: none;
+
+    &[dashed=true] {
+        border: 1px dashed #2c950c;
+        background-color: transparent;
+        color: #2c950c;
+    }
+
+    &:not([dashed=true]):hover {
+        background-color: #42a325;
+        color: white;
+        transition: background-color 0.1s linear;
+    }
+
+    &[dashed=true]:active {
+        color: #42a325;
+        border-color: #42a325;
+        box-shadow: 0px 0px 10px #42a325;
+        transition: box-shadow 0.1s linear, color 0.1s linear;
+    }
+
+    &[dashed=true]:hover {
+        color: #42a325;
+        border-color: #42a325;
+    }
 }
 
 .m-button-default.is-error {
     background-color: #d82727;
     color: white;
     border: none;
+
+    &[dashed=true] {
+        border: 1px dashed #d82727;
+        background-color: transparent;
+        color: #d82727;
+    }
+
+    &:not([dashed=true]):hover {
+        background-color: rgb(235, 58, 58);
+        color: white;
+        transition: background-color 0.1s linear;
+    }
+
+    &[dashed=true]:active {
+        color: rgb(235, 58, 58);
+        border-color: rgb(235, 58, 58);
+        box-shadow: 0px 0px 10px rgb(235, 58, 58);
+        transition: box-shadow 0.1s linear, color 0.1s linear;
+    }
+
+    &[dashed=true]:hover {
+        color: rgb(235, 58, 58);
+        border-color: rgb(235, 58, 58);
+    }
 }
 
 .m-button-default.is-warning {
     background-color: #e6880e;
     color: white;
     border: none;
+
+    &[dashed=true] {
+        border: 1px dashed #e6880e;
+        background-color: transparent;
+        color: #e6880e;
+    }
+
+    &:not([dashed=true]):hover {
+        background-color: #ee992a;
+        color: white;
+        transition: background-color 0.1s linear;
+    }
+
+    &[dashed=true]:active {
+        color: #ee992a;
+        border-color: #ee992a;
+        box-shadow: 0px 0px 10px #ee992a;
+        transition: box-shadow 0.1s linear, color 0.1s linear;
+    }
+
+    &[dashed=true]:hover {
+        color: #ee992a;
+        border-color: #ee992a;
+    }
 }
 
 .m-button-default.is-info {
     background-color: #12ade6;
     color: white;
     border: none;
-}
 
-.m-button-default.is-default:hover {
-    color: #42a325;
-    border-color: #42a325;
-    transition: color 0.1s linear;
-}
+    &[dashed=true] {
+        border: 1px dashed #12ade6;
+        background-color: transparent;
+        color: #12ade6;
+    }
 
-.m-button-default.is-tertiary:hover {
-    color: #42a325;
-    border-color: #42a325;
-    transition: color 0.1s linear;
-}
+    &:not([dashed=true]):hover {
+        background-color: #32c1f5;
+        color: white;
+        transition: background-color 0.1s linear;
+    }
 
-.m-button-default.is-primary:hover {
-    background-color: #42a325;
-    color: white;
-    transition: background-color 0.1s linear;
-}
 
-.m-button-default.is-success:hover {
-    background-color: #42a325;
-    color: white;
-    transition: background-color 0.1s linear;
-}
+    &[dashed=true]:active {
+        color: #32c1f5;
+        border-color: #32c1f5;
+        box-shadow: 0px 0px 10px #32c1f5;
+        transition: box-shadow 0.1s linear, color 0.1s linear;
+    }
 
-.m-button-default.is-error:hover {
-    background-color: rgb(235, 58, 58);
-    color: white;
-    transition: background-color 0.1s linear;
-}
-
-.m-button-default.is-warning:hover {
-    background-color: #ee992a;
-    color: white;
-    transition: background-color 0.1s linear;
-}
-
-.m-button-default.is-info:hover {
-    background-color: #32c1f5;
-    color: white;
-    transition: background-color 0.1s linear;
+    &[dashed=true]:hover {
+        color: #32c1f5;
+        border-color: #32c1f5;
+    }
 }

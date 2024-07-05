@@ -31,6 +31,16 @@
     <m-button type="info">not strong</m-button>
     <m-button type="primary" strong>strong</m-button>
 </div>
+虚线按钮
+<div class="button-container">
+    <m-button type="default" dashed>default</m-button>
+    <m-button type="tertiary" dashed>tertiary</m-button>
+    <m-button type="success" dashed>success</m-button>
+    <m-button type="primary" dashed>primary</m-button>
+    <m-button type="info" dashed>info</m-button>
+    <m-button type="warning" dashed>warning</m-button>
+    <m-button type="error" dashed>error</m-button>
+</div>
 :::
 
 代码示例
@@ -60,6 +70,15 @@
 <div class="button-container">
     <m-button type="info">not strong</m-button>
     <m-button type="primary" strong>strong</m-button>
+</div>
+<div class="button-container">
+    <m-button type="default" dashed>default</m-button>
+    <m-button type="tertiary" dashed>tertiary</m-button>
+    <m-button type="success" dashed>success</m-button>
+    <m-button type="primary" dashed>primary</m-button>
+    <m-button type="info" dashed>info</m-button>
+    <m-button type="warning" dashed>warning</m-button>
+    <m-button type="error" dashed>error</m-button>
 </div>
 ```
 
