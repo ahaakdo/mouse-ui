@@ -41,6 +41,16 @@
     <m-button type="warning" dashed>warning</m-button>
     <m-button type="error" dashed>error</m-button>
 </div>
+次要按钮
+<div class="button-container">
+    <m-button type="default" secondary>default</m-button>
+    <m-button type="tertiary" secondary>tertiary</m-button>
+    <m-button type="success" secondary>success</m-button>
+    <m-button type="primary" secondary>primary</m-button>
+    <m-button type="info" secondary>info</m-button>
+    <m-button type="warning" secondary>warning</m-button>
+    <m-button type="error" secondary>error</m-button>
+</div>
 :::
 
 代码示例
@@ -79,6 +89,15 @@
     <m-button type="info" dashed>info</m-button>
     <m-button type="warning" dashed>warning</m-button>
     <m-button type="error" dashed>error</m-button>
+</div>
+<div class="button-container">
+    <m-button type="default" secondary>default</m-button>
+    <m-button type="tertiary" secondary>tertiary</m-button>
+    <m-button type="success" secondary>success</m-button>
+    <m-button type="primary" secondary>primary</m-button>
+    <m-button type="info" secondary>info</m-button>
+    <m-button type="warning" secondary>warning</m-button>
+    <m-button type="error" secondary>error</m-button>
 </div>
 ```
 

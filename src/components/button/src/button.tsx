@@ -6,7 +6,7 @@ export default defineComponent({
     name: 'MButton',
     props: buttonProps,
     setup(props: ButtonProps, { slots }) {
-        const { size, type, disabled, round, strong, dashed } = toRefs(props)
+        const { size, type, disabled, round, strong, dashed, secondary } = toRefs(props)
         return () => {
             const defaultSlot = slots.default ? slots.default() : '按钮'
             return <button
@@ -15,6 +15,7 @@ export default defineComponent({
                 round={round.value}
                 strong={strong.value}
                 dashed={dashed.value}
+                secondary={secondary.value}
             >
                 {defaultSlot}
             </button>

@@ -4,7 +4,7 @@
 </script>
 
 <template>
-  <MButton size="large" type="info" dashed>
+  <MButton size="large" type="tertiary" secondary dashed>
     按钮
   </MButton>
 </template>
