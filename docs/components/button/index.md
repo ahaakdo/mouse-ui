@@ -51,6 +51,20 @@
     <m-button type="warning" secondary>warning</m-button>
     <m-button type="error" secondary>error</m-button>
 </div>
+文本按钮
+<div class="button-container">
+    <m-button type="default" text>default</m-button>
+    <m-button type="tertiary" text>tertiary</m-button>
+    <m-button type="success" text>success</m-button>
+    <m-button type="primary" text>primary</m-button>
+    <m-button type="info" text>info</m-button>
+    <m-button type="warning" text>warning</m-button>
+    <m-button type="error" text>error</m-button>
+</div>
+链接
+<div class="button-container">
+    <m-button size="large" type="default" text tag="a" href="http://www.baidu.com">百度</m-button>
+</div>
 :::
 
 代码示例
@@ -98,6 +112,18 @@
     <m-button type="info" secondary>info</m-button>
     <m-button type="warning" secondary>warning</m-button>
     <m-button type="error" secondary>error</m-button>
+</div>
+<div class="button-container">
+    <m-button type="default" text>default</m-button>
+    <m-button type="tertiary" text>tertiary</m-button>
+    <m-button type="success" text>success</m-button>
+    <m-button type="primary" text>primary</m-button>
+    <m-button type="info" text>info</m-button>
+    <m-button type="warning" text>warning</m-button>
+    <m-button type="error" text>error</m-button>
+</div>
+<div class="button-container">
+    <m-button size="large" type="default" text tag="a" href="http://www.baidu.com">百度</m-button>
 </div>
 ```
 

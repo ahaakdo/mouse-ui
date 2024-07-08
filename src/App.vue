@@ -4,7 +4,7 @@
 </script>
 
 <template>
-  <MButton size="large" type="tertiary" secondary dashed>
+  <MButton size="large" type="default" text tag="a" href="http://www.baidu.com">
     按钮
   </MButton>
 </template>

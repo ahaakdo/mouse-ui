@@ -40,6 +40,18 @@ export const buttonProps = {
     secondary: {
         type: Boolean,
         default: false
+    },
+    text: {
+        type: Boolean,
+        default: false
+    },
+    href: {
+        type: String,
+        default: ''
+    },
+    tag: {
+        type: String,
+        default: ''
     }
 } as const
 

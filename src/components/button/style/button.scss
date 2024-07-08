@@ -11,6 +11,11 @@
     outline: 0;
     cursor: pointer;
 
+    &[text=true] {
+        border: none;
+        background-color: transparent;
+    }
+
     //增加disabled属性
     &[disabled] {
         cursor: not-allowed;
@@ -53,11 +58,25 @@
     background-color: transparent;
     color: black;
 
+    a {
+        color: black;
+    }
+
     &[secondary=true] {
         background-color: #dfdede;
         border: none;
 
-        &:hover {
+        &[text=true] {
+            border: none;
+            background-color: transparent;
+            color: black;
+
+            &:hover {
+                color: #42a325;
+            }
+        }
+
+        &:not([text=true]):hover {
             background-color: #c5c4c4;
             transition: background-color 0.1s linear;
         }
@@ -66,27 +85,50 @@
     &:not([secondary=true]) {
         &[dashed=true] {
             border: 1px dashed #adaaaa;
+
+            &[text=true] {
+                border: none;
+                background-color: transparent;
+                color: black;
+
+                &:hover {
+                    color: #42a325;
+                }
+            }
+
+            &:not([text=true]) {
+                &:active {
+                    color: #42a325;
+                    border-color: #42a325;
+                    box-shadow: 0px 0px 10px #42a325;
+                    transition: box-shadow 0.1s linear, color 0.1s linear;
+                }
+
+                &:hover {
+                    color: #42a325;
+                    border-color: #42a325;
+                }
+            }
         }
 
-        &[dashed=true]:hover {
-            color: #42a325;
-            border-color: #42a325;
-        }
+        &:not([dashed=true]) {
+            &[text=true] {
+                border: none;
+                background-color: transparent;
+                color: black;
 
-        &:not([dashed=true]):hover {
-            color: #42a325;
-            border-color: #42a325;
-            transition: color 0.1s linear;
-        }
+                &:hover {
+                    color: #42a325;
+                }
+            }
 
-        &[dashed=true]:active {
-            color: #42a325;
-            border-color: #42a325;
-            box-shadow: 0px 0px 10px #42a325;
-            transition: box-shadow 0.1s linear, color 0.1s linear;
+            &:not([text=true]):hover {
+                color: #42a325;
+                border-color: #42a325;
+                transition: color 0.1s linear;
+            }
         }
     }
-
 }
 
 .m-button-default.is-tertiary {
@@ -97,7 +139,17 @@
         background-color: #dfdede;
         border: none;
 
-        &:hover {
+        &[text=true] {
+            border: none;
+            background-color: transparent;
+            color: rgb(124, 124, 124);
+
+            &:hover {
+                color: #42a325;
+            }
+        }
+
+        &:not([text=true]):hover {
             background-color: #c5c4c4;
             transition: background-color 0.1s linear;
         }
@@ -107,24 +159,49 @@
 
         &[dashed=true] {
             border: 1px dashed #adaaaa;
+
+            &[text=true] {
+                border: none;
+                background-color: transparent;
+                color: rgb(124, 124, 124);
+
+                &:hover {
+                    color: #42a325;
+                }
+            }
+
+            &:not([text=true]) {
+                &:active {
+                    color: #42a325;
+                    border-color: #42a325;
+                    box-shadow: 0px 0px 10px #42a325;
+                    transition: box-shadow 0.1s linear, color 0.1s linear;
+                }
+
+                &:hover {
+                    color: #42a325;
+                    border-color: #42a325;
+                }
+            }
+
         }
 
-        &[dashed=true]:hover {
-            color: #42a325;
-            border-color: #42a325;
-        }
+        &:not([dashed=true]) {
+            &[text=true] {
+                border: none;
+                background-color: transparent;
+                color: rgb(124, 124, 124);
 
-        &:not([dashed=true]):hover {
-            color: #42a325;
-            border-color: #42a325;
-            transition: color 0.1s linear;
-        }
+                &:hover {
+                    color: #42a325;
+                }
+            }
 
-        &[dashed=true]:active {
-            color: #42a325;
-            border-color: #42a325;
-            box-shadow: 0px 0px 10px #42a325;
-            transition: box-shadow 0.1s linear, color 0.1s linear;
+            &:not([text=true]):hover {
+                color: #42a325;
+                border-color: #42a325;
+                transition: color 0.1s linear;
+            }
         }
     }
 }
@@ -139,7 +216,17 @@
         border: none;
         color: #2c950c;
 
-        &:hover {
+        &[text=true] {
+            border: none;
+            background-color: transparent;
+            color: #2c950c;
+
+            &:hover {
+                color: #48b826;
+            }
+        }
+
+        &:not([text=true]):hover {
             background-color: #c2dbb0;
             transition: background-color 0.1s linear;
         }
@@ -150,24 +237,49 @@
             border: 1px dashed #2c950c;
             background-color: transparent;
             color: #2c950c;
+
+            &[text=true] {
+                border: none;
+                background-color: transparent;
+                color: #2c950c;
+
+                &:hover {
+                    color: #4bbf27;
+                }
+            }
+
+            &:not([text=true]) {
+                &:active {
+                    color: #42a325;
+                    border-color: #42a325;
+                    box-shadow: 0px 0px 10px #42a325;
+                    transition: box-shadow 0.1s linear, color 0.1s linear;
+                }
+
+                &:hover {
+                    color: #42a325;
+                    border-color: #42a325;
+                }
+            }
+
         }
 
-        &:not([dashed=true]):hover {
-            background-color: #42a325;
-            color: white;
-            transition: background-color 0.1s linear;
-        }
+        &:not([dashed=true]) {
+            &[text=true] {
+                border: none;
+                background-color: transparent;
+                color: #2c950c;
 
-        &[dashed=true]:active {
-            color: #42a325;
-            border-color: #42a325;
-            box-shadow: 0px 0px 10px #42a325;
-            transition: box-shadow 0.1s linear, color 0.1s linear;
-        }
+                &:hover {
+                    color: #51c72e;
+                }
+            }
 
-        &[dashed=true]:hover {
-            color: #42a325;
-            border-color: #42a325;
+            &:not([text=true]):hover {
+                background-color: #42a325;
+                color: white;
+                transition: background-color 0.1s linear;
+            }
         }
     }
 }
@@ -182,7 +294,17 @@
         border: none;
         color: #2c950c;
 
-        &:hover {
+        &[text=true] {
+            border: none;
+            background-color: transparent;
+            color: #2c950c;
+
+            &:hover {
+                color: #48b826;
+            }
+        }
+
+        &:not([text=true]):hover {
             background-color: #c2dbb0;
             transition: background-color 0.1s linear;
         }
@@ -193,25 +315,50 @@
             border: 1px dashed #2c950c;
             background-color: transparent;
             color: #2c950c;
+
+            &[text=true] {
+                border: none;
+                background-color: transparent;
+                color: #2c950c;
+
+                &:hover {
+                    color: #4bbf27;
+                }
+            }
+
+            &:not([text=true]) {
+                &:active {
+                    color: #42a325;
+                    border-color: #42a325;
+                    box-shadow: 0px 0px 10px #42a325;
+                    transition: box-shadow 0.1s linear, color 0.1s linear;
+                }
+
+                &:hover {
+                    color: #42a325;
+                    border-color: #42a325;
+                }
+            }
         }
 
-        &:not([dashed=true]):hover {
-            background-color: #42a325;
-            color: white;
-            transition: background-color 0.1s linear;
+        &:not([dashed=true]) {
+            &[text=true] {
+                border: none;
+                background-color: transparent;
+                color: #2c950c;
+
+                &:hover {
+                    color: #51c72e;
+                }
+            }
+
+            &:not([text=true]):hover {
+                background-color: #42a325;
+                color: white;
+                transition: background-color 0.1s linear;
+            }
         }
 
-        &[dashed=true]:active {
-            color: #42a325;
-            border-color: #42a325;
-            box-shadow: 0px 0px 10px #42a325;
-            transition: box-shadow 0.1s linear, color 0.1s linear;
-        }
-
-        &[dashed=true]:hover {
-            color: #42a325;
-            border-color: #42a325;
-        }
     }
 }
 
@@ -225,7 +372,17 @@
         border: none;
         color: #d82727;
 
-        &:hover {
+        &[text=true] {
+            border: none;
+            background-color: transparent;
+            color: #d82727;
+
+            &:hover {
+                color: #ed4747;
+            }
+        }
+
+        &:not([text=true]):hover {
             background-color: #f3bdbd;
             transition: background-color 0.1s linear;
         }
@@ -236,24 +393,48 @@
             border: 1px dashed #d82727;
             background-color: transparent;
             color: #d82727;
+
+            &[text=true] {
+                border: none;
+                background-color: transparent;
+                color: #d82727;
+
+                &:hover {
+                    color: #e84f4f;
+                }
+            }
+
+            &:not([text=true]) {
+                &:active {
+                    color: rgb(235, 58, 58);
+                    border-color: rgb(235, 58, 58);
+                    box-shadow: 0px 0px 10px rgb(235, 58, 58);
+                    transition: box-shadow 0.1s linear, color 0.1s linear;
+                }
+
+                &:hover {
+                    color: rgb(235, 58, 58);
+                    border-color: rgb(235, 58, 58);
+                }
+            }
         }
 
-        &:not([dashed=true]):hover {
-            background-color: rgb(235, 58, 58);
-            color: white;
-            transition: background-color 0.1s linear;
-        }
+        &:not([dashed=true]) {
+            &[text=true] {
+                border: none;
+                background-color: transparent;
+                color: #d82727;
 
-        &[dashed=true]:active {
-            color: rgb(235, 58, 58);
-            border-color: rgb(235, 58, 58);
-            box-shadow: 0px 0px 10px rgb(235, 58, 58);
-            transition: box-shadow 0.1s linear, color 0.1s linear;
-        }
+                &:hover {
+                    color: #f44343;
+                }
+            }
 
-        &[dashed=true]:hover {
-            color: rgb(235, 58, 58);
-            border-color: rgb(235, 58, 58);
+            &:not([text=true]):hover {
+                background-color: rgb(235, 58, 58);
+                color: white;
+                transition: background-color 0.1s linear;
+            }
         }
     }
 }
@@ -268,7 +449,17 @@
         border: none;
         color: #e6880e;
 
-        &:hover {
+        &[text=true] {
+            border: none;
+            background-color: transparent;
+            color: #e6880e;
+
+            &:hover {
+                color: #f29c2d;
+            }
+        }
+
+        &:not([text=true]):hover {
             background-color: #f8c888;
             transition: background-color 0.1s linear;
         }
@@ -279,24 +470,48 @@
             border: 1px dashed #e6880e;
             background-color: transparent;
             color: #e6880e;
+
+            &[text=true] {
+                border: none;
+                background-color: transparent;
+                color: #e6880e;
+
+                &:hover {
+                    color: #f09b2c;
+                }
+            }
+
+            &:not([text=true]) {
+                &:active {
+                    color: #ee992a;
+                    border-color: #ee992a;
+                    box-shadow: 0px 0px 10px #ee992a;
+                    transition: box-shadow 0.1s linear, color 0.1s linear;
+                }
+
+                &:hover {
+                    color: #ee992a;
+                    border-color: #ee992a;
+                }
+            }
         }
 
-        &:not([dashed=true]):hover {
-            background-color: #ee992a;
-            color: white;
-            transition: background-color 0.1s linear;
-        }
+        &:not([dashed=true]) {
+            &[text=true] {
+                border: none;
+                background-color: transparent;
+                color: #e6880e;
 
-        &[dashed=true]:active {
-            color: #ee992a;
-            border-color: #ee992a;
-            box-shadow: 0px 0px 10px #ee992a;
-            transition: box-shadow 0.1s linear, color 0.1s linear;
-        }
+                &:hover {
+                    color: #f7a335;
+                }
+            }
 
-        &[dashed=true]:hover {
-            color: #ee992a;
-            border-color: #ee992a;
+            &:not([text=true]):hover {
+                background-color: #ee992a;
+                color: white;
+                transition: background-color 0.1s linear;
+            }
         }
     }
 }
@@ -311,7 +526,17 @@
         border: none;
         color: #12ade6;
 
-        &:hover {
+        &[text=true] {
+            border: none;
+            background-color: transparent;
+            color: #12ade6;
+
+            &:hover {
+                color: #29b9ee;
+            }
+        }
+
+        &:not([text=true]):hover {
             background-color: #b6e7f8;
             transition: background-color 0.1s linear;
         }
@@ -322,25 +547,48 @@
             border: 1px dashed #12ade6;
             background-color: transparent;
             color: #12ade6;
+
+            &[text=true] {
+                border: none;
+                background-color: transparent;
+                color: #12ade6;
+
+                &:hover {
+                    color: #29b9ee;
+                }
+            }
+
+            &:not([text=true]) {
+                &:active {
+                    color: #32c1f5;
+                    border-color: #32c1f5;
+                    box-shadow: 0px 0px 10px #32c1f5;
+                    transition: box-shadow 0.1s linear, color 0.1s linear;
+                }
+
+                &:hover {
+                    color: #32c1f5;
+                    border-color: #32c1f5;
+                }
+            }
         }
 
-        &:not([dashed=true]):hover {
-            background-color: #32c1f5;
-            color: white;
-            transition: background-color 0.1s linear;
-        }
+        &:not([dashed=true]) {
+            &[text=true] {
+                border: none;
+                background-color: transparent;
+                color: #12ade6;
 
+                &:hover {
+                    color: #24b9ef;
+                }
+            }
 
-        &[dashed=true]:active {
-            color: #32c1f5;
-            border-color: #32c1f5;
-            box-shadow: 0px 0px 10px #32c1f5;
-            transition: box-shadow 0.1s linear, color 0.1s linear;
-        }
-
-        &[dashed=true]:hover {
-            color: #32c1f5;
-            border-color: #32c1f5;
+            &:not([text=true]):hover {
+                background-color: #32c1f5;
+                color: white;
+                transition: background-color 0.1s linear;
+            }
         }
     }
 }
